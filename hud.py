@@ -17,7 +17,7 @@ class HUD:
         dist = self.dvd_logo.position.distance_to(closest_corner) - self.dvd_logo.radius
 
         font = (SysFont('JetBrains Mono', 19)
-                .render(f'fps: {int(fps)}, dist: {int(dist)}', True, 'white'))
+                .render(f'fps: {int(fps)}, distance closest corner: {int(dist)}', True, 'white'))
 
         text = self.screen.blit(font, (0, 0))
         return text
